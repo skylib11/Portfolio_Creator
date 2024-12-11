@@ -104,3 +104,4 @@ This project is licensed under the GNU General Public License v3.0. See the [LIC
     • Yahoo Finance for financial data.
     • Developers and contributors to the yfinance library.
 
+*README generated with ChatGPT (OpenAI).*
