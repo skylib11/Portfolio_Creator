@@ -88,7 +88,10 @@ After entering the share symbols and allocation, you will be prompted with:
 	  
 **Option 4: Exit**
 Exits the program.
-	 
+
+![Screenshot from 2025-03-06 18-53-27](https://github.com/user-attachments/assets/cf4b251e-b509-44c4-9278-7f71e357a700)
+
+  
 **Monitor Output:**
         ◦ Log and portfolio details are saved in the respective folders (logs/, Portfolio_List/, etc.).
 
