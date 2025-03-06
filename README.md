@@ -84,12 +84,11 @@ Exits the program. If there is any unsaved data, you will be prompted to confirm
 	 
 **Monitor Output:**
         ◦ Log and portfolio details are saved in the respective folders (logs/, Portfolio_List/, etc.).
-.gitignore Configuration
+
 The following folders and files are excluded from version control:
 /data/
 /logs/
 /Portfolio_List/
-Ensure the .gitignore file is present in the root directory to avoid tracking these files.
 
 **Contributing**
 Contributions are welcome! Please follow these steps:
