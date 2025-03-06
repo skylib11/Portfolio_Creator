@@ -26,7 +26,7 @@ The Portfolio Management Script is a script designed for creating and managing s
  
 **Folder Structure**
     • data/ : Stores simulation data files.
-    • logs/ : Contains log files for program activity.
+    • log/ : Contains log files for program activity.
     • Portfolio_List/ : Holds files related to created portfolios.
     
 **Usage**
@@ -89,20 +89,22 @@ After entering the share symbols and allocation, you will be prompted with:
 **Option 4: Exit**
 Exits the program.
 
-![Screenshot from 2025-03-06 18-53-27](https://github.com/user-attachments/assets/cf4b251e-b509-44c4-9278-7f71e357a700)
+**Option 1: Create Portfolio - Split Equally**
 
-![Screenshot from 2025-03-06 18-55-13](https://github.com/user-attachments/assets/e86703df-cec9-4315-ade5-1eb078ceac9f)
+![1](https://github.com/user-attachments/assets/102218f1-58b3-4937-b01e-ff5e0bd98747)
 
-![Screenshot from 2025-03-06 18-56-34](https://github.com/user-attachments/assets/6a165ba5-04e0-4931-82da-0f7f713e7e75)
+**Option 1: Create Portfolio - Enter Manually**
 
-  
-**Monitor Output:**
-        ◦ Log and portfolio details are saved in the respective folders (logs/, Portfolio_List/, etc.).
+![2](https://github.com/user-attachments/assets/9df07901-9e6f-417a-9101-fc0c43c9ecf7)
 
-The following folders and files are excluded from version control:
-/data/
-/logs/
-/Portfolio_List/
+**Option 2: Show Portfolio**
+
+![3](https://github.com/user-attachments/assets/0a7a515e-a959-4d72-8796-1b9ac7982e59)
+
+**Option 3 : Delete Portfolio , Option 4 : Exit**
+
+![4](https://github.com/user-attachments/assets/91c23872-92f4-422a-a4bd-6a6e426e8299)
+
 
 
 **License**
