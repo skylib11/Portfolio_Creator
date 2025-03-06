@@ -91,6 +91,10 @@ Exits the program.
 
 ![Screenshot from 2025-03-06 18-53-27](https://github.com/user-attachments/assets/cf4b251e-b509-44c4-9278-7f71e357a700)
 
+![Screenshot from 2025-03-06 18-55-13](https://github.com/user-attachments/assets/e86703df-cec9-4315-ade5-1eb078ceac9f)
+
+![Screenshot from 2025-03-06 18-56-34](https://github.com/user-attachments/assets/6a165ba5-04e0-4931-82da-0f7f713e7e75)
+
   
 **Monitor Output:**
         ◦ Log and portfolio details are saved in the respective folders (logs/, Portfolio_List/, etc.).
