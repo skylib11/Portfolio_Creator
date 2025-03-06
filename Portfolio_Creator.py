@@ -3,30 +3,12 @@ Author: S.T.Sathish (SKYLIB)
 Email: skylib.stsathish@gmail.com
 Website: https://beacons.ai/skylib
 Date Created: 11-December-2024
-Description: Portfolio Management Program
-A program for creating and tracking simulated stock portfolios. Users can allocate investments by splitting amounts equally or specifying allocations manually. The program integrates with Yahoo Finance through the yfinance library to fetch real-time stock prices and company details, providing a streamlined solution for investment monitoring and analysis. Stock prices are displayed in ₹ (Indian Rupees), intended for Indian users. However, displaying prices in other currencies will be updated in future versions.
-
+Description: Portfolio Management Script
 
 Program Generated with: ChatGPT (OpenAI)
 
-Copyright (c) [2024] S.T.Sathish (SKYLIB)
+Copyright (c) [2025] S.T.Sathish (SKYLIB)
 """
-
-# License
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
-#
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program. If not, see <https://www.gnu.org/licenses/>.
-#
-# Generated with: ChatGPT (OpenAI)
 
 import os
 import csv
@@ -37,7 +19,7 @@ from datetime import datetime
 # 1. Ensure the directory for portfolios, logs, and data exists
 portfolio_dir = "Portfolio_List"
 data_dir = "data"
-log_dir = "logs"
+log_dir = "log"
 
 # 2. Create directories if they don't exist
 os.makedirs(portfolio_dir, exist_ok=True)
@@ -45,8 +27,8 @@ os.makedirs(data_dir, exist_ok=True)
 os.makedirs(log_dir, exist_ok=True)
 
 # 3. Define data and log file paths
-data_file = os.path.join(data_dir, "portfolio_data.py")
-log_file = os.path.join(log_dir, "portfolio_log.txt")
+data_file = os.path.join(data_dir, "portfolio_data.txt")
+log_file = os.path.join(log_dir, "portfolio_log.log")
 
 # 4. Set up logging
 logging.basicConfig(
@@ -195,6 +177,7 @@ def create_portfolio():
         # Save investments to CSV
         with open(file_path, "w", newline="") as csvfile:
             writer = csv.writer(csvfile)
+            writer.writerow(["Portfolio Created On", datetime.now().strftime("%d-%m-%Y %H:%M:%S")])  # Add creation date to header
             writer.writerow(["Company Name", "Symbol", "Price per Share", "Shares", "Total Cost"])
             writer.writerows(investments)
 
@@ -242,8 +225,12 @@ def show_portfolio():
     print("\nPortfolio Details:")
     with open(file_path, "r") as csvfile:
         reader = csv.reader(csvfile)
-        header = next(reader)
+        header1 = next(reader)  # First header contains the creation date
+        header2 = next(reader)  # Second header contains column names
         rows = list(reader)
+
+        creation_date = header1[1]  # Retrieve creation date from the first header row
+        print(f"Portfolio created on: {creation_date}\n")  # Display creation date
 
     total_investment = 0
     total_current_cost = 0
@@ -346,5 +333,8 @@ def main():
             logging.warning("Invalid menu choice.")
 
 if __name__ == "__main__":
-    main()
-
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\nProcess interrupted by user. Exiting gracefully...")
+        logging.info("Process interrupted by user. Exiting gracefully.")
