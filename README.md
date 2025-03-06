@@ -90,11 +90,6 @@ The following folders and files are excluded from version control:
 /logs/
 /Portfolio_List/
 
-**Contributing**
-Contributions are welcome! Please follow these steps:
-    1. Fork the repository.
-    2. Create a new branch for your feature or bug fix.
-    3. Commit your changes and submit a pull request.
 
 **License**
 This project is licensed under the GNU General Public License v3.0. See the [LICENSE](./LICENSE) file for details.
