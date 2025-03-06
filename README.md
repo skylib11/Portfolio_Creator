@@ -92,7 +92,21 @@ The following folders and files are excluded from version control:
 
 
 **License**
-This project is licensed under the GNU General Public License v3.0. See the [LICENSE](./LICENSE) file for details.
+Copyright (c) 2025
+
+Permission is hereby granted, free of charge, to any individual to use, copy, and distribute this software **for personal and commercial purposes**, subject to the following conditions:
+
+1. The software **must not** be resold, sublicensed, or used as part of a commercial product or service.
+2. The software **must not** be modified and redistributed.
+3. Attribution to the original creator must be included in any copies or distributions.
+4. The software is provided "as is," without warranty of any kind. The author is not responsible for any consequences arising from its use.
+5. Companies or organizations must obtain explicit permission before using, modifying, or using these scripts.
+
+
+
+---
+
+This project and scripts were generated with the assistance of **ChatGPT**.
 
 **Acknowledgments**
     • Yahoo Finance for financial data.
