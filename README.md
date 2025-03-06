@@ -92,6 +92,7 @@ The following folders and files are excluded from version control:
 
 
 **License**
+
 Copyright (c) 2025
 
 Permission is hereby granted, free of charge, to any individual to use, copy, and distribute this software **for personal and commercial purposes**, subject to the following conditions:
