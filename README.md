@@ -1,15 +1,14 @@
 
 
-## Portfolio Management Program
+## Portfolio Management Script
 
-The Portfolio Management Program is a script designed for creating and managing simulated stock portfolios. It enables users to allocate investment amounts equally or specify allocations manually. The program fetches real-time stock prices and company information using the yfinance library, providing an efficient way to monitor and analyze investments. Stock prices are displayed in ₹ (Indian Rupees), intended for Indian users. However, displaying prices in other currencies will be updated in future versions.
+The Portfolio Management Script is a script designed for creating and managing simulated share market portfolios. It enables users to allocate investment amounts equally or specify allocations manually. The program fetches real-time share prices using the yfinance library, providing an efficient way to monitor and analyze investments and trades. Share prices are displayed in ₹ (Indian Rupees), intended for Indian users. However, displaying prices in other currencies might be updated in future.
 
 **Features**
 
  1. Create Portfolios: Allocate funds equally or manually set investment
     amounts.
- 2. Track Performance: Monitor real-time stock prices and company
-    details.
+ 2. Track Performance: Fetch the latest share prices in real-time (not a continuous live feed).
  3. Folder Structure: Automatically organizes logs, portfolio data, and
     other files into appropriate directories.
 
@@ -33,9 +32,9 @@ The Portfolio Management Program is a script designed for creating and managing 
 **Usage**
     **1. Clone the Repository:**
     
-    `git clone <repository-url>
+    `git clone https://github.com/skylib11/Portfolio_Creator
 
-     cd <repository-folder>`
+     cd Portfolio_Creator
 
 
    **2. Run the Program:**
@@ -52,13 +51,21 @@ The Portfolio Management Program is a script designed for creating and managing 
  4. Exit
 	
 **Option 1: Create Portfolio**
-You will be prompted to enter stock symbols (e.g., AAPL for Apple, GOOGL for Google). You can:
+The script will ask 
+"Do you want to split the investment amount equally or enter details manually?
+1. Split equally
+2. Enter manually
+Enter your choice (1/2):"
 
- **Allocate funds equally:** The program will automatically distribute your total investment equally across the stocks.
+**1. Split equally:** The program will automatically distribute your total investment equally across the shares.
 
-**Manually allocate funds:** Specify the amount to invest in each stock.
+**2. Enter manually:** Specify the amount to invest in each stock.
+
+
+You will be prompted to enter share market company symbols (e.g., RELIANCE.NS for Reliance Industries Limited, TCS.NS for Tata Consultancy Services Limited). Enter the symbols
+
 	
-After entering the stock symbols and allocation, you will be prompted with:
+After entering the share symbols and allocation, you will be prompted with:
 
 > Do you want to save this portfolio? (y/n):
 
@@ -67,9 +74,9 @@ After entering the stock symbols and allocation, you will be prompted with:
 
 	  
 **Option 2: Show Portfolio**
-	Displays the saved portfolio. After saving the portfolio, you will be prompted with:
+  Displays the existing portfolio. Then, you will be prompted with:
 
-> Do you want to view it with current prices and profit calculations? (y/n):
+> Do you want to view it with recent prices and profit calculations? (y/n):
 
  - y: Displays the portfolio with real-time stock prices and calculates the profit/loss for each stock.
  - n: Shows just the portfolio data without the current prices or profit/loss calculations.	
@@ -80,7 +87,7 @@ After entering the stock symbols and allocation, you will be prompted with:
 > Enter your choice:
 	  
 **Option 4: Exit**
-Exits the program. If there is any unsaved data, you will be prompted to confirm whether you want to save the portfolio before exiting:
+Exits the program.
 	 
 **Monitor Output:**
         ◦ Log and portfolio details are saved in the respective folders (logs/, Portfolio_List/, etc.).
