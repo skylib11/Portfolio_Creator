@@ -99,7 +99,8 @@ Exits the program.
 
 **Option 2: Show Portfolio**
 
-![3](https://github.com/user-attachments/assets/0a7a515e-a959-4d72-8796-1b9ac7982e59)
+![3](https://github.com/user-attachments/assets/52bc52b4-23cf-4473-a9a9-b4d981e0c0f7)
+
 
 **Option 3 : Delete Portfolio , Option 4 : Exit**
 
